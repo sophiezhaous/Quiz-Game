@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>High School Musical</title>
+	<link rel="stylesheet" type="text/css" href="styleQuiz.css">
+	
+</head>
+<body>
+<img src="highschoolmusical.jpg" alt="Mountain View" style="width:300px;height:200px;">
+<script src="lab1Script.js">
+	
+</script>
+<h1> High School Musical Songs</h1>
+<div class="directions" id="stuff">
+  Please enter a high school musical song. 
+  <input id = "answerBox" type="text" disabled=true onkeypress="checkAnswers(this.value)">
+</div>
+
+<div id='score'> Score:  </div>
+ <tr>
+		<td>
+			<button id = "start" onClick = "myStart()"> Start </button>
+		</td>
+		<td>
+			<button id = "restart" disabled=true onClick = "myRestart()"> Resume</button>
+		</td>
+		<td>
+			<button id = "pause" disabled=true onClick = "myPause()"> Pause </button>
+		</td>
+		<td>
+			<button id = "quit" disabled=true onClick = "myQuit()"> Quit </button>
+		</td>
+		<td>
+			<span id="countdown" class="timer"></span>
+		</td>
+</tr>
+<table style="width:100%">
+<tr>
+    <td>It's the _______. It feels so right to be here with you. </td>
+    <td id="num0" ></td>
+    
+  </tr>
+  <tr>
+    <td>We're soaring, flying. There's not a star in heaven that we can't reach. </td>
+    <td id = "num1"></td>
+  </tr>
+   <tr>
+    <th>It's funny when you find yourself looking from the outside. </th>
+    <td id = "num2"></td>
+    
+  </tr>
+  </tr>
+   <tr>
+    <th>Once in a lifetime, means there's no second chance. </th>
+    <td id = "num3"> </td>
+    
+  </tr>
+  <tr>
+    <th>It's hard to believe, that I couldn't see. You were always there beside me. </th>
+    <td id = "num4"> </td>
+    
+  </tr>
+
+</body>
+</html>
